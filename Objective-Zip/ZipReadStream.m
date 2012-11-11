@@ -1,6 +1,6 @@
 //
 //  ZipReadStream.m
-//  Objective-Zip v. 0.7.2
+//  Objective-Zip v. 0.8
 //
 //  Created by Gianluca Bertani on 28/12/09.
 //  Copyright 2009-10 Flying Dolphin Studio. All rights reserved.
@@ -41,7 +41,7 @@
 
 
 - (id) initWithUnzFileStruct:(unzFile)unzFile fileNameInZip:(NSString *)fileNameInZip {
-	if ((self= [super init])) {
+	if (self= [super init]) {
 		_unzFile= unzFile;
 		_fileNameInZip= fileNameInZip;
 	}
@@ -49,23 +49,21 @@
 	return self;
 }
 
-- (NSData *)readDataOfLength:(NSUInteger)length {
-	NSMutableData *data = [NSMutableData dataWithLength:length];
-	int bytes = unzReadCurrentFile(_unzFile, [data mutableBytes], (unsigned)length);
-	if (bytes < 0) {
+- (NSUInteger) readDataWithBuffer:(NSMutableData *)buffer {
+	int err= unzReadCurrentFile(_unzFile, [buffer mutableBytes], [buffer length]);
+	if (err < 0) {
 		NSString *reason= [NSString stringWithFormat:@"Error in reading '%@' in the zipfile", _fileNameInZip];
-		@throw [[ZipException alloc] initWithError:bytes reason:reason];
+		@throw [[[ZipException alloc] initWithError:err reason:reason] autorelease];
 	}
 	
-	[data setLength:bytes];
-	return data;
+	return err;
 }
 
 - (void) finishedReading {
 	int err= unzCloseCurrentFile(_unzFile);
 	if (err != UNZ_OK) {
 		NSString *reason= [NSString stringWithFormat:@"Error in closing '%@' in the zipfile", _fileNameInZip];
-		@throw [[ZipException alloc] initWithError:err reason:reason];
+		@throw [[[ZipException alloc] initWithError:err reason:reason] autorelease];
 	}
 }
 

@@ -1,6 +1,6 @@
 //
 //  FileInZipInfo.h
-//  Objective-Zip v. 0.7.2
+//  Objective-Zip v. 0.8
 //
 //  Created by Gianluca Bertani on 27/12/09.
 //  Copyright 2009-10 Flying Dolphin Studio. All rights reserved.
@@ -42,19 +42,19 @@
 	ZipCompressionLevel _level;
 	BOOL _crypted;
 	NSUInteger _size;
-	NSDate *__unsafe_unretained _date;
+	NSDate *_date;
 	NSUInteger _crc32;
-	NSString *__unsafe_unretained _name;
+	NSString *_name;
 }
 
 - (id) initWithName:(NSString *)name length:(NSUInteger)length level:(ZipCompressionLevel)level crypted:(BOOL)crypted size:(NSUInteger)size date:(NSDate *)date crc32:(NSUInteger)crc32;
 
-@property (unsafe_unretained, nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSString *name;
 @property (nonatomic, readonly) NSUInteger length;
 @property (nonatomic, readonly) ZipCompressionLevel level;
 @property (nonatomic, readonly) BOOL crypted;
 @property (nonatomic, readonly) NSUInteger size;
-@property (unsafe_unretained, nonatomic, readonly) NSDate *date;
+@property (nonatomic, readonly) NSDate *date;
 @property (nonatomic, readonly) NSUInteger crc32;
 
 @end
