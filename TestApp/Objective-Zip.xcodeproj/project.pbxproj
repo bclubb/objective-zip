@@ -15,6 +15,7 @@
 		2899E5220DE3E06400AC0155 /* Objective_ZipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* Objective_ZipViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* Objective_ZipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* Objective_ZipViewController.m */; };
+		75DDF179164FEFEE002FC19D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DDF178164FEFEE002FC19D /* Default-568h@2x.png */; };
 		8C8F2D3A10EBC94B00F75833 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F2D3910EBC94B00F75833 /* Default.png */; };
 		8C8F2D9310EBCE0300F75833 /* ObjectiveZipIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F2D9210EBCE0300F75833 /* ObjectiveZipIcon.png */; };
 		B319802F135D159B00741E77 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B319802E135D159B00741E77 /* libz.dylib */; };
@@ -42,6 +43,7 @@
 		28D7ACF70DDB3853001CB0EB /* Objective_ZipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Objective_ZipViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Objective_Zip_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objective_Zip_Prefix.pch; sourceTree = "<group>"; };
+		75DDF178164FEFEE002FC19D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8C8F2D3910EBC94B00F75833 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		8C8F2D9210EBCE0300F75833 /* ObjectiveZipIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ObjectiveZipIcon.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Objective_Zip-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Objective_Zip-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				75DDF178164FEFEE002FC19D /* Default-568h@2x.png */,
 				B3198045135D179500741E77 /* MiniZip */,
 				B319804F135D179500741E77 /* Objective-Zip */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -233,6 +236,7 @@
 				2899E5220DE3E06400AC0155 /* Objective_ZipViewController.xib in Resources */,
 				8C8F2D3A10EBC94B00F75833 /* Default.png in Resources */,
 				8C8F2D9310EBCE0300F75833 /* ObjectiveZipIcon.png in Resources */,
+				75DDF179164FEFEE002FC19D /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +269,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -272,6 +277,7 @@
 				GCC_PREFIX_HEADER = Objective_Zip_Prefix.pch;
 				INFOPLIST_FILE = "Objective_Zip-Info.plist";
 				PRODUCT_NAME = "Objective-Zip";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 			};
 			name = Debug;
 		};
@@ -279,11 +285,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Objective_Zip_Prefix.pch;
 				INFOPLIST_FILE = "Objective_Zip-Info.plist";
 				PRODUCT_NAME = "Objective-Zip";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 			};
 			name = Release;
 		};
