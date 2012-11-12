@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ZipWrapper' target in the 'ZipWrapper' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
