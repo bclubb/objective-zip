@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		757DD78C16517BBF009AEF00 /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 757DD78D16517BBF009AEF00 /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				757DD79216517C10009AEF00 /* Make Fat Binary */,
+			);
+			dependencies = (
+				757DD79116517BD6009AEF00 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		757DD740165173FD009AEF00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757DD73F165173FD009AEF00 /* Foundation.framework */; };
+		757DD74F165173FD009AEF00 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757DD74E165173FD009AEF00 /* SenTestingKit.framework */; };
+		757DD752165173FD009AEF00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757DD73F165173FD009AEF00 /* Foundation.framework */; };
+		757DD755165173FD009AEF00 /* libBSLZip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 757DD73C165173FD009AEF00 /* libBSLZip.a */; };
+		757DD75B165173FD009AEF00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 757DD759165173FD009AEF00 /* InfoPlist.strings */; };
+		757DD75E165173FD009AEF00 /* BSLZipReadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 757DD75D165173FD009AEF00 /* BSLZipReadingTests.m */; };
+		757DD771165174D4009AEF00 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 757DD769165174D4009AEF00 /* ioapi.c */; };
+		757DD772165174D4009AEF00 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 757DD76B165174D4009AEF00 /* mztools.c */; };
+		757DD773165174D4009AEF00 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 757DD76D165174D4009AEF00 /* unzip.c */; };
+		757DD774165174D4009AEF00 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 757DD76F165174D4009AEF00 /* zip.c */; };
+		757DD77F165174F0009AEF00 /* ZipFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 757DD775165174F0009AEF00 /* ZipFile.m */; };
+		757DD780165174F0009AEF00 /* FileInZipInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 757DD776165174F0009AEF00 /* FileInZipInfo.m */; };
+		757DD781165174F0009AEF00 /* ZipReadStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 757DD777165174F0009AEF00 /* ZipReadStream.m */; };
+		757DD782165174F0009AEF00 /* ZipWriteStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 757DD778165174F0009AEF00 /* ZipWriteStream.m */; };
+		757DD783165174F0009AEF00 /* ZipException.m in Sources */ = {isa = PBXBuildFile; fileRef = 757DD77B165174F0009AEF00 /* ZipException.m */; };
+		757DD7851651789B009AEF00 /* FileInZipInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 757DD779165174F0009AEF00 /* FileInZipInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		757DD7861651789B009AEF00 /* ZipException.h in Headers */ = {isa = PBXBuildFile; fileRef = 757DD77A165174F0009AEF00 /* ZipException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		757DD7871651789B009AEF00 /* ZipFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 757DD77C165174F0009AEF00 /* ZipFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		757DD7881651789B009AEF00 /* ZipReadStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 757DD77D165174F0009AEF00 /* ZipReadStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		757DD7891651789B009AEF00 /* ZipWriteStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 757DD77E165174F0009AEF00 /* ZipWriteStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		757DD78A1651789B009AEF00 /* BSLZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 757DD744165173FD009AEF00 /* BSLZip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		757DD79316518612009AEF00 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 757DD76C165174D4009AEF00 /* mztools.h */; settings = {ATTRIBUTES = (); }; };
+		757DD79416518615009AEF00 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 757DD76E165174D4009AEF00 /* unzip.h */; settings = {ATTRIBUTES = (); }; };
+		757DD79516518618009AEF00 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 757DD770165174D4009AEF00 /* zip.h */; settings = {ATTRIBUTES = (); }; };
+		757DD79716518673009AEF00 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 757DD76A165174D4009AEF00 /* ioapi.h */; };
+		757DD799165188DC009AEF00 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 757DD798165188DC009AEF00 /* libz.dylib */; };
+		757DD79A165188F8009AEF00 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 757DD798165188DC009AEF00 /* libz.dylib */; };
+		757DD7A116519061009AEF00 /* BSLZipWritingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 757DD7A016519061009AEF00 /* BSLZipWritingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		757DD753165173FD009AEF00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 757DD733165173FD009AEF00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 757DD73B165173FD009AEF00;
+			remoteInfo = BSLZip;
+		};
+		757DD79016517BD6009AEF00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 757DD733165173FD009AEF00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 757DD73B165173FD009AEF00;
+			remoteInfo = BSLZip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		757DD73C165173FD009AEF00 /* libBSLZip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBSLZip.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		757DD73F165173FD009AEF00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		757DD743165173FD009AEF00 /* BSLZip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BSLZip-Prefix.pch"; sourceTree = "<group>"; };
+		757DD744165173FD009AEF00 /* BSLZip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSLZip.h; sourceTree = "<group>"; };
+		757DD74D165173FD009AEF00 /* BSLZipTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSLZipTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		757DD74E165173FD009AEF00 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		757DD750165173FD009AEF00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		757DD758165173FD009AEF00 /* BSLZipTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BSLZipTests-Info.plist"; sourceTree = "<group>"; };
+		757DD75A165173FD009AEF00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		757DD75C165173FD009AEF00 /* BSLZipReadingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSLZipReadingTests.h; sourceTree = "<group>"; };
+		757DD75D165173FD009AEF00 /* BSLZipReadingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSLZipReadingTests.m; sourceTree = "<group>"; };
+		757DD769165174D4009AEF00 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		757DD76A165174D4009AEF00 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		757DD76B165174D4009AEF00 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		757DD76C165174D4009AEF00 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		757DD76D165174D4009AEF00 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		757DD76E165174D4009AEF00 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		757DD76F165174D4009AEF00 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		757DD770165174D4009AEF00 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		757DD775165174F0009AEF00 /* ZipFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZipFile.m; path = "../../Objective-Zip/ZipFile.m"; sourceTree = "<group>"; };
+		757DD776165174F0009AEF00 /* FileInZipInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileInZipInfo.m; path = "../../Objective-Zip/FileInZipInfo.m"; sourceTree = "<group>"; };
+		757DD777165174F0009AEF00 /* ZipReadStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZipReadStream.m; path = "../../Objective-Zip/ZipReadStream.m"; sourceTree = "<group>"; };
+		757DD778165174F0009AEF00 /* ZipWriteStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZipWriteStream.m; path = "../../Objective-Zip/ZipWriteStream.m"; sourceTree = "<group>"; };
+		757DD779165174F0009AEF00 /* FileInZipInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileInZipInfo.h; path = "../../Objective-Zip/FileInZipInfo.h"; sourceTree = "<group>"; };
+		757DD77A165174F0009AEF00 /* ZipException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipException.h; path = "../../Objective-Zip/ZipException.h"; sourceTree = "<group>"; };
+		757DD77B165174F0009AEF00 /* ZipException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZipException.m; path = "../../Objective-Zip/ZipException.m"; sourceTree = "<group>"; };
+		757DD77C165174F0009AEF00 /* ZipFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipFile.h; path = "../../Objective-Zip/ZipFile.h"; sourceTree = "<group>"; };
+		757DD77D165174F0009AEF00 /* ZipReadStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipReadStream.h; path = "../../Objective-Zip/ZipReadStream.h"; sourceTree = "<group>"; };
+		757DD77E165174F0009AEF00 /* ZipWriteStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipWriteStream.h; path = "../../Objective-Zip/ZipWriteStream.h"; sourceTree = "<group>"; };
+		757DD798165188DC009AEF00 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		757DD79F16519061009AEF00 /* BSLZipWritingTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSLZipWritingTests.h; sourceTree = "<group>"; };
+		757DD7A016519061009AEF00 /* BSLZipWritingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSLZipWritingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		757DD739165173FD009AEF00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757DD799165188DC009AEF00 /* libz.dylib in Frameworks */,
+				757DD740165173FD009AEF00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		757DD749165173FD009AEF00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757DD79A165188F8009AEF00 /* libz.dylib in Frameworks */,
+				757DD74F165173FD009AEF00 /* SenTestingKit.framework in Frameworks */,
+				757DD752165173FD009AEF00 /* Foundation.framework in Frameworks */,
+				757DD755165173FD009AEF00 /* libBSLZip.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		757DD731165173FD009AEF00 = {
+			isa = PBXGroup;
+			children = (
+				757DD798165188DC009AEF00 /* libz.dylib */,
+				757DD767165174D4009AEF00 /* MiniZip */,
+				757DD741165173FD009AEF00 /* BSLZip */,
+				757DD756165173FD009AEF00 /* BSLZipTests */,
+				757DD73E165173FD009AEF00 /* Frameworks */,
+				757DD73D165173FD009AEF00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		757DD73D165173FD009AEF00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				757DD73C165173FD009AEF00 /* libBSLZip.a */,
+				757DD74D165173FD009AEF00 /* BSLZipTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		757DD73E165173FD009AEF00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				757DD73F165173FD009AEF00 /* Foundation.framework */,
+				757DD74E165173FD009AEF00 /* SenTestingKit.framework */,
+				757DD750165173FD009AEF00 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		757DD741165173FD009AEF00 /* BSLZip */ = {
+			isa = PBXGroup;
+			children = (
+				757DD775165174F0009AEF00 /* ZipFile.m */,
+				757DD776165174F0009AEF00 /* FileInZipInfo.m */,
+				757DD777165174F0009AEF00 /* ZipReadStream.m */,
+				757DD778165174F0009AEF00 /* ZipWriteStream.m */,
+				757DD779165174F0009AEF00 /* FileInZipInfo.h */,
+				757DD77A165174F0009AEF00 /* ZipException.h */,
+				757DD77B165174F0009AEF00 /* ZipException.m */,
+				757DD77C165174F0009AEF00 /* ZipFile.h */,
+				757DD77D165174F0009AEF00 /* ZipReadStream.h */,
+				757DD77E165174F0009AEF00 /* ZipWriteStream.h */,
+				757DD744165173FD009AEF00 /* BSLZip.h */,
+				757DD742165173FD009AEF00 /* Supporting Files */,
+			);
+			path = BSLZip;
+			sourceTree = "<group>";
+		};
+		757DD742165173FD009AEF00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				757DD743165173FD009AEF00 /* BSLZip-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		757DD756165173FD009AEF00 /* BSLZipTests */ = {
+			isa = PBXGroup;
+			children = (
+				757DD75C165173FD009AEF00 /* BSLZipReadingTests.h */,
+				757DD75D165173FD009AEF00 /* BSLZipReadingTests.m */,
+				757DD757165173FD009AEF00 /* Supporting Files */,
+				757DD79F16519061009AEF00 /* BSLZipWritingTests.h */,
+				757DD7A016519061009AEF00 /* BSLZipWritingTests.m */,
+			);
+			path = BSLZipTests;
+			sourceTree = "<group>";
+		};
+		757DD757165173FD009AEF00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				757DD758165173FD009AEF00 /* BSLZipTests-Info.plist */,
+				757DD759165173FD009AEF00 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		757DD767165174D4009AEF00 /* MiniZip */ = {
+			isa = PBXGroup;
+			children = (
+				757DD769165174D4009AEF00 /* ioapi.c */,
+				757DD76A165174D4009AEF00 /* ioapi.h */,
+				757DD76B165174D4009AEF00 /* mztools.c */,
+				757DD76C165174D4009AEF00 /* mztools.h */,
+				757DD76D165174D4009AEF00 /* unzip.c */,
+				757DD76E165174D4009AEF00 /* unzip.h */,
+				757DD76F165174D4009AEF00 /* zip.c */,
+				757DD770165174D4009AEF00 /* zip.h */,
+			);
+			name = MiniZip;
+			path = ../MiniZip;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		757DD7841651787F009AEF00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757DD7851651789B009AEF00 /* FileInZipInfo.h in Headers */,
+				757DD7861651789B009AEF00 /* ZipException.h in Headers */,
+				757DD7871651789B009AEF00 /* ZipFile.h in Headers */,
+				757DD79316518612009AEF00 /* mztools.h in Headers */,
+				757DD79416518615009AEF00 /* unzip.h in Headers */,
+				757DD79516518618009AEF00 /* zip.h in Headers */,
+				757DD7881651789B009AEF00 /* ZipReadStream.h in Headers */,
+				757DD7891651789B009AEF00 /* ZipWriteStream.h in Headers */,
+				757DD78A1651789B009AEF00 /* BSLZip.h in Headers */,
+				757DD79716518673009AEF00 /* ioapi.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		757DD73B165173FD009AEF00 /* BSLZip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 757DD761165173FD009AEF00 /* Build configuration list for PBXNativeTarget "BSLZip" */;
+			buildPhases = (
+				757DD738165173FD009AEF00 /* Sources */,
+				757DD739165173FD009AEF00 /* Frameworks */,
+				757DD7841651787F009AEF00 /* Headers */,
+				757DD78B16517ACB009AEF00 /* Prepare Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BSLZip;
+			productName = BSLZip;
+			productReference = 757DD73C165173FD009AEF00 /* libBSLZip.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		757DD74C165173FD009AEF00 /* BSLZipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 757DD764165173FD009AEF00 /* Build configuration list for PBXNativeTarget "BSLZipTests" */;
+			buildPhases = (
+				757DD748165173FD009AEF00 /* Sources */,
+				757DD749165173FD009AEF00 /* Frameworks */,
+				757DD74A165173FD009AEF00 /* Resources */,
+				757DD74B165173FD009AEF00 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				757DD754165173FD009AEF00 /* PBXTargetDependency */,
+			);
+			name = BSLZipTests;
+			productName = BSLZipTests;
+			productReference = 757DD74D165173FD009AEF00 /* BSLZipTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		757DD733165173FD009AEF00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Bubblesort Labratories";
+			};
+			buildConfigurationList = 757DD736165173FD009AEF00 /* Build configuration list for PBXProject "BSLZip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 757DD731165173FD009AEF00;
+			productRefGroup = 757DD73D165173FD009AEF00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				757DD73B165173FD009AEF00 /* BSLZip */,
+				757DD74C165173FD009AEF00 /* BSLZipTests */,
+				757DD78C16517BBF009AEF00 /* Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		757DD74A165173FD009AEF00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757DD75B165173FD009AEF00 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		757DD74B165173FD009AEF00 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		757DD78B16517ACB009AEF00 /* Prepare Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"";
+		};
+		757DD79216517C10009AEF00 /* Make Fat Binary */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Make Fat Binary";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nlipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		757DD738165173FD009AEF00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757DD771165174D4009AEF00 /* ioapi.c in Sources */,
+				757DD772165174D4009AEF00 /* mztools.c in Sources */,
+				757DD773165174D4009AEF00 /* unzip.c in Sources */,
+				757DD774165174D4009AEF00 /* zip.c in Sources */,
+				757DD77F165174F0009AEF00 /* ZipFile.m in Sources */,
+				757DD780165174F0009AEF00 /* FileInZipInfo.m in Sources */,
+				757DD781165174F0009AEF00 /* ZipReadStream.m in Sources */,
+				757DD782165174F0009AEF00 /* ZipWriteStream.m in Sources */,
+				757DD783165174F0009AEF00 /* ZipException.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		757DD748165173FD009AEF00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757DD75E165173FD009AEF00 /* BSLZipReadingTests.m in Sources */,
+				757DD7A116519061009AEF00 /* BSLZipWritingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		757DD754165173FD009AEF00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 757DD73B165173FD009AEF00 /* BSLZip */;
+			targetProxy = 757DD753165173FD009AEF00 /* PBXContainerItemProxy */;
+		};
+		757DD79116517BD6009AEF00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 757DD73B165173FD009AEF00 /* BSLZip */;
+			targetProxy = 757DD79016517BD6009AEF00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		757DD759165173FD009AEF00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				757DD75A165173FD009AEF00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		757DD75F165173FD009AEF00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		757DD760165173FD009AEF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		757DD762165173FD009AEF00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BSLZip.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BSLZip/BSLZip-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		757DD763165173FD009AEF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BSLZip.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BSLZip/BSLZip-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		757DD765165173FD009AEF00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BSLZip/BSLZip-Prefix.pch";
+				INFOPLIST_FILE = "BSLZipTests/BSLZipTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		757DD766165173FD009AEF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BSLZip/BSLZip-Prefix.pch";
+				INFOPLIST_FILE = "BSLZipTests/BSLZipTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		757DD78E16517BBF009AEF00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		757DD78F16517BBF009AEF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		757DD736165173FD009AEF00 /* Build configuration list for PBXProject "BSLZip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				757DD75F165173FD009AEF00 /* Debug */,
+				757DD760165173FD009AEF00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		757DD761165173FD009AEF00 /* Build configuration list for PBXNativeTarget "BSLZip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				757DD762165173FD009AEF00 /* Debug */,
+				757DD763165173FD009AEF00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		757DD764165173FD009AEF00 /* Build configuration list for PBXNativeTarget "BSLZipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				757DD765165173FD009AEF00 /* Debug */,
+				757DD766165173FD009AEF00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		757DD78D16517BBF009AEF00 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				757DD78E16517BBF009AEF00 /* Debug */,
+				757DD78F16517BBF009AEF00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 757DD733165173FD009AEF00 /* Project object */;
+}
